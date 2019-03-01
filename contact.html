@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact page">
+  <meta name="author" content="Isaiah Sylvester">
+  <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">     
+</head>
+
+<body>
+<!-- Right hand column -->
+<section id="column2">
+  <pre id="team">The Team</pre>
+  <img id="contact-profile" src="images/profiled.png" alt="portrait profile">
+  <p class="spacer-contact"><span id="name">Isaiah Sylvester</span><br>
+    Cell: 647-555-555<br>
+  Email: example.com</p>
+</section>
+<main class="container3">
+<!-- Navigation code -->
+<nav id="nav3">
+  <a class="highlight" href="resume.html" target="_blank">Resume</a>
+  <a class="highlight" href="contact.html" target="_blank">Contact</a>
+  <a class="highlight" href="video_page.html" target="_blank">Videos</a>
+  <a class="highlight" href="photo_gallery.html" target="_blank">Photos</a>
+  <a class="highlight" href="service_page.html" target="_blank">Services</a>
+</nav>
+<!-- Let's connect Article -->
+<article id="contact-article">  
+  <h2>Let's Connect <a href="#map"><img src="images/pin.png" alt="Location pin"></a></h2>
+  <p>I'm a 23 year old Toronto born computer programmer analysist equipped and ready to bring whatever project you may have to fruition. Connect with me through email or cellular with any buisness inquiries. Accepting tech cnsolidations this June 2019 into late August
+  </p>
+<h2>Faqs</h2>
+<ul>
+  <li>6 years Adobe CS6</li>
+  <li>6 years Adobe Lightroom</li>
+  <li>1 year HTML</li>
+  <li>1 year Python</li>
+</ul> 
+</article>
+<map name="image-maps" id="image-maps">
+<area  alt="Instagram" title="Instagram" href="http://www.instagram.com/" shape="rect" coords="17,11,52,46" style="outline:none;" target="_blank"     />
+<area  alt="Facebook" title="Facebook" href="http://www.facebook.com/" shape="rect" coords="79,9,118,48" style="outline:none;" target="_blank"     />
+<area  alt="Twitter" title="Twitter" href="http://www.twitter.com/" shape="rect" coords="146,14,178,44" style="outline:none;" target="_blank"     />
+<area  alt="Linkedin" title="Linkedin" href="http://www.linkedin.com/" shape="rect" coords="203,10,244,49" style="outline:none;" target="_blank"     />
+<area  alt="Google Plus" title="Google Plus" href="http://www.plus.google.com/" shape="rect" coords="268,18,298,44" style="outline:none;" target="_blank"     />
+<area shape="rect" coords="318,59,320,61" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+
+<section>
+  <img id="badge" src="images/social_badge.png" usemap="#image-maps" alt="social badge"/>
+  <h3 id="move">Find me here!</h3>
+  <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.676022, lng: -79.411049},
+          zoom: 12});}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiaFY4lqCTKQP-BFlTUMq0GdLv5x6cUcI&callback=initMap"
+    async defer></script></div>
+</section>
+<!-- Footer -->
+</main>
+</body>  
+<footer>
+  <script src="https://my.gblearn.com/js/loadscript.js"></script>
+  <p id="copyright">&copy; Copyright Isaiah Sylvester</p>
+</footer>
+</html>
